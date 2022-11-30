@@ -86,11 +86,12 @@ article p {
   background-image: url('../images/marvelSprites.jpg');
 }
 
-#carol { background-position: -150px 0; }
-#clint { background-position: -300px 0; }
-#hulk { background-position: -450px 0; }
-#thor { background-position: -600px 0; }
-#widow { background-position: -750px 0; }
+#Canada { background-position: 10px 0; }
+#UnitedStates { background-position: -150px 0; }
+#Australia { background-position: -300px 0; }
+#England { background-position: -450px 0; }
+#Brazil { background-position: -600px 0; }
+#Portugal { background-position: -750px 0; }
 
 .sprite:hover { background-position-y: -150px !important; }
 
