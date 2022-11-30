@@ -83,7 +83,7 @@ article p {
   width: 150px;
   height: 150px;
   
-  background-image: url('../images/marvelSprites.jpg');
+  background-image: url('../images/WorldCupSprites.jpg');
 }
 
 #Canada { background-position: 10px 0; }
@@ -130,7 +130,24 @@ footer {
   display: none;
 }
 
-#lightbox2 { background-image: url('../images/Thor_LB_Bg.png'); }
+.lightbox2 { 
+  width: 100vw; /* vw = viewport width => screen width */
+  height: 100vh; /* vh = viewport height => screen height */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  background-image: url('../images/Cap_LB_Bg.png');
+  background-repeat: no-repeat;
+
+  background-size: 55vh; /* 55% of the viewport height */
+  background-position: 40px bottom;
+
+  display: none;
+}
+#lightbox { background-image: url('../images/Thor_LB_Bg.png'); }
 
 .lightbox_close {
   position: relative;
