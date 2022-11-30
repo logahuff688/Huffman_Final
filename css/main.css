@@ -80,6 +80,7 @@ article p {
 }
 
 .sprite {
+  transition: 0.1s;
   width: 150px;
   height: 150px;
   
@@ -93,7 +94,9 @@ article p {
 #Brazil { background-position: -600px 0; }
 #Portugal { background-position: -750px 0; }
 
-.sprite:hover { background-position-y: -150px !important; }
+.sprite:hover { 
+  transition: 0.1s;
+  background-position-y: -150px !important; }
 
 /* footer rules here */
 footer {
@@ -150,6 +153,7 @@ footer {
 #lightbox { background-image: url('../images/Thor_LB_Bg.png'); }
 
 .lightbox_close {
+  transition: 0.5s;
   position: relative;
   top: 20px;
   left: 95%;
@@ -162,7 +166,9 @@ footer {
   font-weight: bolder;
 }
 
-.lightbox_close:hover { opacity: 0.5; color: red; }
+.lightbox_close:hover {
+transition: 0.5s; 
+opacity: 0.5; color: red; }
 
 .lightbox article {
   width: 55%;
@@ -180,3 +186,16 @@ footer {
 
 /* turn the lightbox on using the :target pseudo selector */
 .lightbox:target { display: block; }
+
+@keyframes Fade {
+
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+
+}
+
